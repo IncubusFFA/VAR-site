@@ -25,6 +25,18 @@ header {
     color: #fff;
 }
 
+.logo a {
+    color: #fff;                 
+    text-decoration: none;         
+    transition: text-shadow 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.logo a:hover {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.9); 
+    transform: scale(1.05);                      
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -188,50 +200,4 @@ footer a:hover {
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        text-align: right;
-    }
 
-    .logo {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul {
-        font-size: 14px;
-    }
-
-    .logo {
-        font-size: 28px;
-    }
-
-    .social-icons img {
-        width: 32px;
-        height: 32px;
-    }
-}
-
-
-a {
-    color: #fff; 
-    text-decoration: none;
-    transition: box-shadow 0.3s, text-shadow 0.3s, transform 0.2s;
-}
-
-a:hover {
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.9); 
-    box-shadow: none; 
-    transform: scale(1.05);
-}
